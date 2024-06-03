@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './App.css';
 import Button from './components/Button.js';
+import PopUp from './components/PopUp.js';
 
 const App = () => {
 
-  const [popupVisible, setPopupVisible] = setState(false)
+  const [popupVisible, setPopupVisible] = useState(false)
 
   const onSettingButtonClicked = () => {
     setPopupVisible(!popupVisible)
