@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 const PopUp = (props) => {
 
     const styles = {
@@ -15,6 +17,7 @@ const PopUp = (props) => {
             {props.isVisible && (
                 <div style={styles}>
                     hello
+                    {props.close}
                 </div>
             )}
         </div>

@@ -16,7 +16,7 @@ const App = () => {
       <Button text="main"/>
       <Button text="setting" buttonClick={onSettingButtonClicked}/>
       <Button text="new game" />
-      <PopUp isVisible={popupVisible}/>
+      <PopUp isVisible={popupVisible} close={<button onClick={onSettingButtonClicked}>閉じる</button>}/>
     </div>
   )
 }
